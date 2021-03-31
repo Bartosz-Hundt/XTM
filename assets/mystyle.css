@@ -1,42 +1,57 @@
-* {
-  font-family: sans-serif; /* Change your font family */
+.nav-tabs {
+	float: left;
+	width: 100%;
+	margin: 0;
+	list-style-type: none;
+	border-bottom: 1px solid transparent;
 }
 
-.content-table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  min-width: 400px;
-  border-radius: 5px 5px 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+.nav-tabs > li {
+	float: left;
+	margin-bottom: -1px;
 }
 
-.content-table thead tr {
-  background-color: #009879;
-  color: #ffffff;
-  text-align: left;
-  font-weight: bold;
+.nav-tabs > li > a {
+	margin-right: 2px;
+	line-height: 1.5;
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	float: left;
+	text-decoration: none;
 }
 
-.content-table th,
-.content-table td {
-  padding: 12px 15px;
+.nav-tabs > li > a:hover {
+	border-color: #eee #eee #ddd;
 }
 
-.content-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	color: #555;
+	cursor: default;
+	background-color: #fff;
+	border-color: transparent;
 }
 
-.content-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+.tab-content > .tab-pane {
+	float: left;
+	width: 100%;
+	display: none;
 }
 
-.content-table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+.tab-content > .tab-pane.active {
+	display: block;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 5px 4px -2px rgba(0, 0, 0, 0.15);
 }
-
-.content-table tbody tr.active-row {
-  font-weight: bold;
-  color: #009879;
+.text-center{
+	padding: 15px;
+}
+.request{
+	font-size: 14px;
+}
+.request:hover{
+	color: #555;
 }
